@@ -89,6 +89,18 @@ export const constantRoutes = [
       }
     ]
   },
+  {
+    path: '/comment',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'Comment',
+        component: () => import('@/views/comment/index'),
+        meta: { title: 'Comment', icon: 'el-icon-s-comment' }
+      }
+    ]
+  },
 
   {
     path: '/nested',
